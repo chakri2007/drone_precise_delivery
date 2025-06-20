@@ -2,6 +2,8 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from px4_msgs.msg import VehicleLandDetected
+from std_msgs.msg import String
+
 import numpy as np
 from dataclasses import dataclass
 
@@ -15,7 +17,7 @@ class ArucoTag:
 
 class PrecisionLand(Node):
     def __init__(self):
-        super().__init__('drone_controller_node')
+        super().__init__('precision_land_node')
 
         self.state = "Idle"
         self._tag = None
@@ -27,7 +29,6 @@ class PrecisionLand(Node):
         self._search_waypoint_index = 0
         self._package_dropped = False
 
-        # Parameters
         self.declare_parameters('', [
            ('descent_vel', 0.6),
            ('vel_p_gain', 1.7),
@@ -46,11 +47,17 @@ class PrecisionLand(Node):
         self.delta_position = self.get_parameter('delta_position').get_parameter_value().double_value
         self.delta_velocity = self.get_parameter('delta_velocity').get_parameter_value().double_value
 
-        # Subscriptions
         self.create_subscription(PoseStamped, '/target_pose', self.target_pose_callback, 10)
         self.create_subscription(VehicleLandDetected, '/fmu/out/vehicle_land_detected', self.land_detected_callback, 10)
+        self.create_subscription(String, '/drone_status', self.status_callback, 10)
 
         self.timer = self.create_timer(0.1, self.update)
+
+    def status_callback(self, msg):
+        if msg.data.lower() == "reached" and self.state == "Idle":
+            self.get_logger().info("Received status 'reached'. Switching to Search state.")
+            self.state = "Search"
+            self._search_started = True
 
     def target_pose_callback(self, msg):
         if not self._search_started:
@@ -108,28 +115,23 @@ class PrecisionLand(Node):
             self.get_logger().info("Target lost during descend.")
             return
 
-        # Desired stop height above tag
-        target_altitude_above_tag = 6.1  # 20 feet in meters
+        target_altitude_above_tag = 6.1  # 20 feet
 
-        # Simulated current altitude; replace with real altitude if available
-        current_z = 0.0  # Example: self._vehicle_local_position_z
+        current_z = 0.0  # Replace with actual altitude if available
         tag_z = self._tag.position[2]
-        relative_altitude = current_z - tag_z  # Adjust if using NED/ENU accordingly
+        relative_altitude = current_z - tag_z
 
-        # If we reach the drop height, drop the package once
         if not self._package_dropped and relative_altitude <= target_altitude_above_tag:
             self.drop_package()
             self._package_dropped = True
-            self.state = "Idle"  # or hold state
+            self.state = "Idle"
             return
 
-        # Continue descent with XY velocity control
         vel = self.calculate_velocity_setpoint_xy()
         self.get_logger().info(f"Descending to drop altitude. Velocity: {vel}")
 
     def drop_package(self):
         self.get_logger().info("Dropping package engaged.")
-        # You can add actuator command here (e.g., publish to /servo or GPIO trigger)
 
     def calculate_velocity_setpoint_xy(self):
         delta_x = -self._tag.position[0]
@@ -178,7 +180,5 @@ class PrecisionLand(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = PrecisionLand()
-    node.state = "Search"
-    node._search_started = True
     rclpy.spin(node)
     rclpy.shutdown()

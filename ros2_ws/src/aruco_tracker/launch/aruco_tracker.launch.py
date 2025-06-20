@@ -22,4 +22,16 @@ def generate_launch_description():
             name='drone_controller_node',
             output='screen',
         ),
+        Node(
+            package='drone_control',
+            executable='offboard_controller_node',
+            name='offboard_controller_node',
+            output='screen',
+        ),
+        Node(
+            package='drone_control',
+            executable='geotag_manager_node',
+            name='geotag_manager_node',
+            output='screen',
+        ),
     ])

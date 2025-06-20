@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools','std_msgs','px4_msgs',],
     zip_safe=True,
     maintainer='burrachakrapani',
     maintainer_email='burrachakrapani@todo.todo',
@@ -21,6 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'drone_controller_node = drone_control.drone_controller_node:main',
+            'offboard_controller_node = drone_control.offboard_controller_node:main',
+            'geotag_manager_node = drone_control.geotag_manager_node:main',
         ],
     },
 )
