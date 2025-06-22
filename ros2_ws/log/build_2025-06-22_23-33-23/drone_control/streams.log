@@ -1,0 +1,23 @@
+[3.137s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/drone_control': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_control build --build-base /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/build install --record /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/install.log --single-version-externally-managed install_data
+[3.980s] running egg_info
+[3.987s] writing ../../build/drone_control/drone_control.egg-info/PKG-INFO
+[3.988s] writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt
+[3.990s] writing entry points to ../../build/drone_control/drone_control.egg-info/entry_points.txt
+[3.991s] writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt
+[3.991s] writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt
+[3.993s] reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+[3.996s] writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'
+[3.997s] running build
+[3.997s] running build_py
+[4.001s] running install
+[4.001s] running install_lib
+[4.007s] running install_data
+[4.019s] running install_egg_info
+[4.029s] removing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages/drone_control-0.0.0-py3.10.egg-info' (and everything under it)
+[4.029s] Copying ../../build/drone_control/drone_control.egg-info to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages/drone_control-0.0.0-py3.10.egg-info
+[4.029s] running install_scripts
+[4.056s] Installing drone_controller_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/drone_control
+[4.057s] Installing geotag_manager_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/drone_control
+[4.059s] Installing offboard_controller_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/drone_control
+[4.060s] writing list of installed files to '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/install.log'
+[4.130s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/drone_control' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_control build --build-base /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/build install --record /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/install.log --single-version-externally-managed install_data

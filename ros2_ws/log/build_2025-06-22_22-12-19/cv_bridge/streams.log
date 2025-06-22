@@ -1,0 +1,129 @@
+[0.017s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge
+[0.088s] -- The C compiler identification is GNU 11.4.0
+[0.165s] -- The CXX compiler identification is GNU 11.4.0
+[0.174s] -- Detecting C compiler ABI info
+[0.257s] -- Detecting C compiler ABI info - done
+[0.266s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.266s] -- Detecting C compile features
+[0.267s] -- Detecting C compile features - done
+[0.272s] -- Detecting CXX compiler ABI info
+[0.371s] -- Detecting CXX compiler ABI info - done
+[0.381s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.381s] -- Detecting CXX compile features
+[0.382s] -- Detecting CXX compile features - done
+[0.384s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.584s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.183s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed 
+[1.199s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 
+[1.201s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.250s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.256s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.266s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.283s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.302s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.359s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.362s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.468s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.503s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.557s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.567s] -- Looking for pthread.h
+[1.653s] -- Looking for pthread.h - found
+[1.653s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.737s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.738s] -- Found Threads: TRUE  
+[1.826s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.994s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[2.128s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[2.129s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[2.326s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[2.326s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[2.523s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[2.533s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.759s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.897s] -- Configuring done
+[4.928s] -- Generating done
+[4.941s] -- Build files have been written to: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge
+[4.966s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge
+[4.969s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge -- -j2 -l2
+[5.056s] [  5%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o[0m
+[5.075s] [  5%] Built target ament_cmake_python_copy_cv_bridge
+[5.124s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.080s] [ 16%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[8.153s] [ 16%] Built target gtest_main
+[8.205s] [ 22%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[15.342s] [ 27%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_mat_sensor_msgs_image_type_adapter.cpp.o[0m
+[15.590s] [ 33%] [32m[1mLinking CXX static library libgtest.a[0m
+[15.741s] [ 33%] Built target gtest
+[15.762s] [ 38%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o[0m
+[17.595s] running egg_info
+[17.596s] creating cv_bridge.egg-info
+[17.597s] writing cv_bridge.egg-info/PKG-INFO
+[17.597s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[17.598s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[17.598s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[17.601s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[17.602s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[17.666s] [ 38%] Built target ament_cmake_python_build_cv_bridge_egg
+[18.840s] [ 44%] [32m[1mLinking CXX shared library libcv_bridge.so[0m
+[19.096s] [ 44%] Built target cv_bridge
+[19.119s] [ 55%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o[0m
+[19.119s] [ 55%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o[0m
+[21.111s] [ 61%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o[0m
+[23.111s] [ 66%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o[0m
+[23.434s] [ 72%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv4.cpp.o[0m
+[25.254s] [ 77%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o[0m
+[27.406s] [ 83%] [32m[1mLinking CXX shared module boost/cv_bridge_boost.so[0m
+[27.416s] [ 88%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o[0m
+[27.628s] [ 88%] Built target cv_bridge_boost
+[27.639s] [ 94%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_dynamic_scaling.cpp.o[0m
+[30.194s] [100%] [32m[1mLinking CXX executable cv_bridge-utest[0m
+[30.733s] [100%] Built target cv_bridge-utest
+[30.745s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge -- -j2 -l2
+[30.747s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge
+[30.755s] -- Install configuration: ""
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/top_level.txt
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/dependency_links.txt
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/PKG-INFO
+[30.756s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/SOURCES.txt
+[30.757s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge
+[30.757s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[30.757s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[30.798s] Listing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[30.798s] Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...
+[30.799s] Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...
+[30.805s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib/libcv_bridge.so
+[30.806s] -- Set runtime path of "/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib/libcv_bridge.so" to ""
+[30.807s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[30.807s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so
+[30.808s] -- Set runtime path of "/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" to ""
+[30.808s] -- Up-to-date: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge
+[30.808s] -- Up-to-date: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge
+[30.808s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_mat_sensor_msgs_image_type_adapter.hpp
+[30.808s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.hpp
+[30.808s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.hpp
+[30.808s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/visibility_control.h
+[30.809s] -- Up-to-date: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib/libcv_bridge.so
+[30.809s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[30.809s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[30.809s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[30.809s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[30.810s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/path.sh
+[30.810s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[30.810s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.bash
+[30.810s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.sh
+[30.810s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[30.811s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[30.811s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/package.dsv
+[30.811s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[30.811s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[30.811s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[30.811s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[30.812s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.812s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[30.812s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[30.812s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[30.812s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/package.xml
+[30.814s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge

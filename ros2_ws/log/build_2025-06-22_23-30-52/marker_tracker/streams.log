@@ -1,0 +1,24 @@
+[2.856s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/marker_tracker': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/marker_tracker build --build-base /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/build install --record /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/install.log --single-version-externally-managed install_data
+[3.810s] running egg_info
+[3.811s] writing ../../build/marker_tracker/marker_tracker.egg-info/PKG-INFO
+[3.812s] writing dependency_links to ../../build/marker_tracker/marker_tracker.egg-info/dependency_links.txt
+[3.814s] writing entry points to ../../build/marker_tracker/marker_tracker.egg-info/entry_points.txt
+[3.819s] writing requirements to ../../build/marker_tracker/marker_tracker.egg-info/requires.txt
+[3.824s] writing top-level names to ../../build/marker_tracker/marker_tracker.egg-info/top_level.txt
+[3.832s] reading manifest file '../../build/marker_tracker/marker_tracker.egg-info/SOURCES.txt'
+[3.836s] writing manifest file '../../build/marker_tracker/marker_tracker.egg-info/SOURCES.txt'
+[3.838s] running build
+[3.838s] running build_py
+[3.839s] copying marker_tracker/marker_tracker_node.py -> /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/build/lib/marker_tracker
+[3.842s] running install
+[3.843s] running install_lib
+[3.855s] copying /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/build/lib/marker_tracker/marker_tracker_node.py -> /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages/marker_tracker
+[3.857s] byte-compiling /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages/marker_tracker/marker_tracker_node.py to marker_tracker_node.cpython-310.pyc
+[3.859s] running install_data
+[3.859s] running install_egg_info
+[3.863s] removing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages/marker_tracker-0.0.0-py3.10.egg-info' (and everything under it)
+[3.864s] Copying ../../build/marker_tracker/marker_tracker.egg-info to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages/marker_tracker-0.0.0-py3.10.egg-info
+[3.866s] running install_scripts
+[3.931s] Installing marker_tracker_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/marker_tracker
+[3.935s] writing list of installed files to '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/install.log'
+[4.032s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/marker_tracker' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/marker_tracker build --build-base /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/build install --record /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/install.log --single-version-externally-managed install_data

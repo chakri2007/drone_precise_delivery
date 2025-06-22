@@ -1,0 +1,11 @@
+[0.021s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker -- -j2 -l2
+[0.083s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_tracker.dir/ArucoTracker.cpp.o[0m
+[0.393s] In file included from [01m[K/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/aruco_tracker/ArucoTracker.cpp:1[m[K:
+[0.394s] [01m[K/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/aruco_tracker/ArucoTracker.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.hpp: No such file or directory
+[0.394s]     6 | #include [01;31m[K<cv_bridge/cv_bridge.hpp>[m[K
+[0.394s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.394s] compilation terminated.
+[0.396s] gmake[2]: *** [CMakeFiles/aruco_tracker.dir/build.make:76: CMakeFiles/aruco_tracker.dir/ArucoTracker.cpp.o] Error 1
+[0.397s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/aruco_tracker.dir/all] Error 2
+[0.397s] gmake: *** [Makefile:146: all] Error 2
+[0.400s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker -- -j2 -l2

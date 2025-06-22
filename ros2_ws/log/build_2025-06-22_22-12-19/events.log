@@ -1,0 +1,607 @@
+[0.000000] (-) TimerEvent: {}
+[0.000807] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.000871] (drone_control) JobQueued: {'identifier': 'drone_control', 'dependencies': OrderedDict()}
+[0.000899] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.000920] (aruco_tracker) JobQueued: {'identifier': 'aruco_tracker', 'dependencies': OrderedDict([('cv_bridge', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge')])}
+[0.000943] (opencv_tests) JobQueued: {'identifier': 'opencv_tests', 'dependencies': OrderedDict([('cv_bridge', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge')])}
+[0.000965] (vision_opencv) JobQueued: {'identifier': 'vision_opencv', 'dependencies': OrderedDict([('cv_bridge', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge'), ('image_geometry', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry')])}
+[0.000990] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.010383] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.015706] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'cmake'}
+[0.016261] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/vision_opencv/cv_bridge', '-DCMAKE_INSTALL_PREFIX=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.023382] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'cmake'}
+[0.023507] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/vision_opencv/image_geometry', '-DCMAKE_INSTALL_PREFIX=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[0.089162] (cv_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.089363] (image_geometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100083] (-) TimerEvent: {}
+[0.157548] (image_geometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.165897] (cv_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.168194] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.174574] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200535] (-) TimerEvent: {}
+[0.247342] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.256421] (image_geometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.256641] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.257136] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.257595] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.260429] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.267201] (cv_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.267423] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.268087] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.272661] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300635] (-) TimerEvent: {}
+[0.355099] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.364883] (image_geometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.365060] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.366564] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.367706] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_python: 1.3.11 (/opt/ros/humble/share/ament_cmake_python/cmake)\n'}
+[0.369581] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.371600] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.381283] (cv_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.381924] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.383087] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.385149] (cv_bridge) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.401032] (-) TimerEvent: {}
+[0.503274] (-) TimerEvent: {}
+[0.559299] (image_geometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.584404] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.603371] (-) TimerEvent: {}
+[0.703761] (-) TimerEvent: {}
+[0.780747] (image_geometry) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: calib3d core highgui imgproc \n'}
+[0.781688] (image_geometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.803895] (-) TimerEvent: {}
+[0.819710] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.825898] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.837102] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.852417] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.871586] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.904031] (-) TimerEvent: {}
+[1.004400] (-) TimerEvent: {}
+[1.106097] (-) TimerEvent: {}
+[1.183848] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed \n'}
+[1.199753] (cv_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 \n'}
+[1.202205] (cv_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.206185] (-) TimerEvent: {}
+[1.250812] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.257003] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.267110] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.283525] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.302890] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.306277] (-) TimerEvent: {}
+[1.359777] (cv_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.363188] (cv_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.406386] (-) TimerEvent: {}
+[1.409146] (image_geometry) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.411615] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.468696] (cv_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.503680] (cv_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.508117] (-) TimerEvent: {}
+[1.510955] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.511615] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.557884] (cv_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.567452] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.599188] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.601137] (image_geometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.608208] (-) TimerEvent: {}
+[1.653922] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.654167] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.687722] (image_geometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.708327] (-) TimerEvent: {}
+[1.709750] (image_geometry) StdoutLine: {'line': b'-- Generating done\n'}
+[1.718157] (image_geometry) StdoutLine: {'line': b'-- Build files have been written to: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry\n'}
+[1.731382] (image_geometry) CommandEnded: {'returncode': 0}
+[1.736133] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'build'}
+[1.736238] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry', '--', '-j2', '-l2'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[1.738257] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.739110] (cv_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.803249] (image_geometry) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_image_geometry\n'}
+[1.810140] (-) TimerEvent: {}
+[1.813738] (image_geometry) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o\x1b[0m\n'}
+[1.827159] (cv_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.850180] (image_geometry) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.910236] (-) TimerEvent: {}
+[1.994429] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[2.011116] (-) TimerEvent: {}
+[2.111541] (-) TimerEvent: {}
+[2.129146] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[2.129500] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[2.211644] (-) TimerEvent: {}
+[2.312062] (-) TimerEvent: {}
+[2.326805] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[2.327163] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[2.412122] (-) TimerEvent: {}
+[2.512569] (-) TimerEvent: {}
+[2.523505] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[2.533491] (cv_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.614115] (-) TimerEvent: {}
+[2.714482] (-) TimerEvent: {}
+[2.760132] (cv_bridge) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[2.817103] (-) TimerEvent: {}
+[2.917463] (-) TimerEvent: {}
+[3.017917] (-) TimerEvent: {}
+[3.118278] (-) TimerEvent: {}
+[3.218649] (-) TimerEvent: {}
+[3.319408] (-) TimerEvent: {}
+[3.419711] (-) TimerEvent: {}
+[3.520085] (-) TimerEvent: {}
+[3.622745] (-) TimerEvent: {}
+[3.694199] (image_geometry) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.722844] (-) TimerEvent: {}
+[3.772191] (image_geometry) StdoutLine: {'line': b'[ 27%] Built target gtest_main\n'}
+[3.822564] (image_geometry) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[3.822924] (-) TimerEvent: {}
+[3.923271] (-) TimerEvent: {}
+[4.025226] (-) TimerEvent: {}
+[4.127150] (-) TimerEvent: {}
+[4.227435] (-) TimerEvent: {}
+[4.327729] (-) TimerEvent: {}
+[4.428025] (-) TimerEvent: {}
+[4.474333] (image_geometry) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o\x1b[0m\n'}
+[4.529108] (-) TimerEvent: {}
+[4.629432] (-) TimerEvent: {}
+[4.729854] (-) TimerEvent: {}
+[4.832108] (-) TimerEvent: {}
+[4.898122] (cv_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.928972] (cv_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[4.934123] (-) TimerEvent: {}
+[4.941418] (cv_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge\n'}
+[4.966720] (cv_bridge) CommandEnded: {'returncode': 0}
+[4.967365] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'build'}
+[4.969221] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge', '--', '-j2', '-l2'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[5.034229] (-) TimerEvent: {}
+[5.056489] (cv_bridge) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o\x1b[0m\n'}
+[5.075814] (cv_bridge) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_cv_bridge\n'}
+[5.125004] (cv_bridge) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.135602] (-) TimerEvent: {}
+[5.236909] (-) TimerEvent: {}
+[5.338231] (-) TimerEvent: {}
+[5.438701] (-) TimerEvent: {}
+[5.539116] (-) TimerEvent: {}
+[5.641031] (-) TimerEvent: {}
+[5.744116] (-) TimerEvent: {}
+[5.844538] (-) TimerEvent: {}
+[5.946097] (-) TimerEvent: {}
+[6.046525] (-) TimerEvent: {}
+[6.146955] (-) TimerEvent: {}
+[6.248895] (-) TimerEvent: {}
+[6.349228] (-) TimerEvent: {}
+[6.452648] (-) TimerEvent: {}
+[6.553096] (-) TimerEvent: {}
+[6.653547] (-) TimerEvent: {}
+[6.753973] (-) TimerEvent: {}
+[6.856117] (-) TimerEvent: {}
+[6.956439] (-) TimerEvent: {}
+[7.058042] (-) TimerEvent: {}
+[7.159124] (-) TimerEvent: {}
+[7.259555] (-) TimerEvent: {}
+[7.361117] (-) TimerEvent: {}
+[7.463280] (-) TimerEvent: {}
+[7.520153] (image_geometry) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libimage_geometry.so\x1b[0m\n'}
+[7.563385] (-) TimerEvent: {}
+[7.663803] (-) TimerEvent: {}
+[7.767170] (-) TimerEvent: {}
+[7.800939] (image_geometry) StdoutLine: {'line': b'[ 54%] Built target image_geometry\n'}
+[7.867218] (-) TimerEvent: {}
+[7.967505] (-) TimerEvent: {}
+[8.069122] (-) TimerEvent: {}
+[8.080938] (cv_bridge) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[8.153646] (cv_bridge) StdoutLine: {'line': b'[ 16%] Built target gtest_main\n'}
+[8.171109] (-) TimerEvent: {}
+[8.206084] (cv_bridge) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[8.271209] (-) TimerEvent: {}
+[8.321113] (image_geometry) StdoutLine: {'line': b'running egg_info\n'}
+[8.323801] (image_geometry) StdoutLine: {'line': b'creating image_geometry.egg-info\n'}
+[8.323959] (image_geometry) StdoutLine: {'line': b'writing image_geometry.egg-info/PKG-INFO\n'}
+[8.324361] (image_geometry) StdoutLine: {'line': b'writing dependency_links to image_geometry.egg-info/dependency_links.txt\n'}
+[8.327152] (image_geometry) StdoutLine: {'line': b'writing top-level names to image_geometry.egg-info/top_level.txt\n'}
+[8.327318] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[8.332212] (image_geometry) StdoutLine: {'line': b"reading manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[8.334171] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[8.372123] (-) TimerEvent: {}
+[8.418166] (image_geometry) StdoutLine: {'line': b'[ 54%] Built target ament_cmake_python_build_image_geometry_egg\n'}
+[8.473930] (-) TimerEvent: {}
+[8.575237] (-) TimerEvent: {}
+[8.675626] (-) TimerEvent: {}
+[8.777120] (-) TimerEvent: {}
+[8.877513] (-) TimerEvent: {}
+[8.977808] (-) TimerEvent: {}
+[9.079439] (-) TimerEvent: {}
+[9.179819] (-) TimerEvent: {}
+[9.280201] (-) TimerEvent: {}
+[9.382119] (-) TimerEvent: {}
+[9.484119] (-) TimerEvent: {}
+[9.584474] (-) TimerEvent: {}
+[9.684796] (-) TimerEvent: {}
+[9.786037] (-) TimerEvent: {}
+[9.886373] (-) TimerEvent: {}
+[9.986663] (-) TimerEvent: {}
+[10.087049] (-) TimerEvent: {}
+[10.187431] (-) TimerEvent: {}
+[10.291117] (-) TimerEvent: {}
+[10.391423] (-) TimerEvent: {}
+[10.491812] (-) TimerEvent: {}
+[10.592192] (-) TimerEvent: {}
+[10.692572] (-) TimerEvent: {}
+[10.793001] (-) TimerEvent: {}
+[10.893418] (-) TimerEvent: {}
+[10.993841] (-) TimerEvent: {}
+[11.095645] (-) TimerEvent: {}
+[11.169045] (image_geometry) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[11.195750] (-) TimerEvent: {}
+[11.296178] (-) TimerEvent: {}
+[11.299619] (image_geometry) StdoutLine: {'line': b'[ 63%] Built target gtest\n'}
+[11.351763] (image_geometry) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object test/CMakeFiles/image_geometry-utest.dir/utest.cpp.o\x1b[0m\n'}
+[11.352199] (image_geometry) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object test/CMakeFiles/image_geometry-utest-equi.dir/utest_equi.cpp.o\x1b[0m\n'}
+[11.397123] (-) TimerEvent: {}
+[11.498424] (-) TimerEvent: {}
+[11.601117] (-) TimerEvent: {}
+[11.701488] (-) TimerEvent: {}
+[11.801867] (-) TimerEvent: {}
+[11.903675] (-) TimerEvent: {}
+[12.004061] (-) TimerEvent: {}
+[12.104426] (-) TimerEvent: {}
+[12.207119] (-) TimerEvent: {}
+[12.307515] (-) TimerEvent: {}
+[12.407893] (-) TimerEvent: {}
+[12.508280] (-) TimerEvent: {}
+[12.608659] (-) TimerEvent: {}
+[12.711062] (-) TimerEvent: {}
+[12.811429] (-) TimerEvent: {}
+[12.914114] (-) TimerEvent: {}
+[13.014523] (-) TimerEvent: {}
+[13.114903] (-) TimerEvent: {}
+[13.215286] (-) TimerEvent: {}
+[13.317101] (-) TimerEvent: {}
+[13.417478] (-) TimerEvent: {}
+[13.517852] (-) TimerEvent: {}
+[13.620125] (-) TimerEvent: {}
+[13.722328] (-) TimerEvent: {}
+[13.822716] (-) TimerEvent: {}
+[13.923074] (-) TimerEvent: {}
+[14.023358] (-) TimerEvent: {}
+[14.123655] (-) TimerEvent: {}
+[14.226425] (-) TimerEvent: {}
+[14.326841] (-) TimerEvent: {}
+[14.427221] (-) TimerEvent: {}
+[14.528407] (-) TimerEvent: {}
+[14.628827] (-) TimerEvent: {}
+[14.729315] (-) TimerEvent: {}
+[14.831124] (-) TimerEvent: {}
+[14.931589] (-) TimerEvent: {}
+[15.034115] (-) TimerEvent: {}
+[15.134541] (-) TimerEvent: {}
+[15.236130] (-) TimerEvent: {}
+[15.336464] (-) TimerEvent: {}
+[15.343353] (cv_bridge) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_mat_sensor_msgs_image_type_adapter.cpp.o\x1b[0m\n'}
+[15.437205] (-) TimerEvent: {}
+[15.540116] (-) TimerEvent: {}
+[15.590467] (cv_bridge) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[15.640229] (-) TimerEvent: {}
+[15.673831] (image_geometry) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest-equi\x1b[0m\n'}
+[15.740337] (-) TimerEvent: {}
+[15.742298] (cv_bridge) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[15.763362] (cv_bridge) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o\x1b[0m\n'}
+[15.842131] (-) TimerEvent: {}
+[15.943743] (-) TimerEvent: {}
+[16.045070] (-) TimerEvent: {}
+[16.145375] (-) TimerEvent: {}
+[16.247196] (-) TimerEvent: {}
+[16.262512] (image_geometry) StdoutLine: {'line': b'[ 90%] Built target image_geometry-utest-equi\n'}
+[16.347303] (-) TimerEvent: {}
+[16.447617] (-) TimerEvent: {}
+[16.547956] (-) TimerEvent: {}
+[16.643082] (image_geometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest\x1b[0m\n'}
+[16.648071] (-) TimerEvent: {}
+[16.749307] (-) TimerEvent: {}
+[16.849726] (-) TimerEvent: {}
+[16.950016] (-) TimerEvent: {}
+[17.050759] (-) TimerEvent: {}
+[17.138103] (image_geometry) StdoutLine: {'line': b'[100%] Built target image_geometry-utest\n'}
+[17.152131] (image_geometry) CommandEnded: {'returncode': 0}
+[17.152527] (-) TimerEvent: {}
+[17.152735] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'install'}
+[17.163349] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[17.173705] (image_geometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.173902] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/pythonpath.sh\n'}
+[17.174071] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/pythonpath.dsv\n'}
+[17.174467] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info\n'}
+[17.174815] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/top_level.txt\n'}
+[17.175131] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[17.176619] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/PKG-INFO\n'}
+[17.176861] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[17.176962] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry\n'}
+[17.177041] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py\n'}
+[17.177522] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py\n'}
+[17.250164] (image_geometry) StdoutLine: {'line': b"Listing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...\n"}
+[17.250338] (image_geometry) StdoutLine: {'line': b"Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py'...\n"}
+[17.250410] (image_geometry) StdoutLine: {'line': b"Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py'...\n"}
+[17.253376] (-) TimerEvent: {}
+[17.260848] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry\n'}
+[17.261254] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry\n'}
+[17.261494] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp\n'}
+[17.261797] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.hpp\n'}
+[17.262087] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.hpp\n'}
+[17.262539] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/lib/libimage_geometry.so\n'}
+[17.263459] (image_geometry) StdoutLine: {'line': b'-- Set runtime path of "/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/lib/libimage_geometry.so" to ""\n'}
+[17.264408] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry\n'}
+[17.265090] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry\n'}
+[17.265279] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh\n'}
+[17.265604] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv\n'}
+[17.265992] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/path.sh\n'}
+[17.266336] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/path.dsv\n'}
+[17.266843] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.bash\n'}
+[17.267236] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.sh\n'}
+[17.267409] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.zsh\n'}
+[17.267732] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.dsv\n'}
+[17.268083] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/package.dsv\n'}
+[17.268556] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/ament_index/resource_index/packages/image_geometry\n'}
+[17.269037] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake\n'}
+[17.269669] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake\n'}
+[17.269846] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.270205] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.270564] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake\n'}
+[17.270938] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake\n'}
+[17.271288] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/package.xml\n'}
+[17.274255] (image_geometry) CommandEnded: {'returncode': 0}
+[17.305278] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 0}
+[17.305771] (drone_control) JobStarted: {'identifier': 'drone_control'}
+[17.353475] (-) TimerEvent: {}
+[17.453794] (-) TimerEvent: {}
+[17.555206] (-) TimerEvent: {}
+[17.595897] (cv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[17.596935] (cv_bridge) StdoutLine: {'line': b'creating cv_bridge.egg-info\n'}
+[17.597685] (cv_bridge) StdoutLine: {'line': b'writing cv_bridge.egg-info/PKG-INFO\n'}
+[17.597965] (cv_bridge) StdoutLine: {'line': b'writing dependency_links to cv_bridge.egg-info/dependency_links.txt\n'}
+[17.598622] (cv_bridge) StdoutLine: {'line': b'writing top-level names to cv_bridge.egg-info/top_level.txt\n'}
+[17.598787] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[17.601589] (cv_bridge) StdoutLine: {'line': b"reading manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[17.602598] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[17.656178] (-) TimerEvent: {}
+[17.667093] (cv_bridge) StdoutLine: {'line': b'[ 38%] Built target ament_cmake_python_build_cv_bridge_egg\n'}
+[17.757453] (-) TimerEvent: {}
+[17.857822] (-) TimerEvent: {}
+[17.958112] (-) TimerEvent: {}
+[18.058504] (-) TimerEvent: {}
+[18.158903] (-) TimerEvent: {}
+[18.260329] (-) TimerEvent: {}
+[18.328166] (drone_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/drone_control', 'build', '--build-base', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/build', 'install', '--record', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/drone_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'chakrapani', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/chakrapani', 'OLDPWD': '/home/chakrapani/drone_files/drone_precise_delivery', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '40866', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/chakrapani/px4_ros_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'chakrapani', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chakrapani', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8GYG82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.219', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages:/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/chakrapani/px4_ros_ws/install/px4_msgs'}, 'shell': False}
+[18.360426] (-) TimerEvent: {}
+[18.460828] (-) TimerEvent: {}
+[18.561849] (-) TimerEvent: {}
+[18.639645] (drone_control) StdoutLine: {'line': b'running egg_info\n'}
+[18.639936] (drone_control) StdoutLine: {'line': b'writing ../../build/drone_control/drone_control.egg-info/PKG-INFO\n'}
+[18.642222] (drone_control) StdoutLine: {'line': b'writing dependency_links to ../../build/drone_control/drone_control.egg-info/dependency_links.txt\n'}
+[18.642420] (drone_control) StdoutLine: {'line': b'writing entry points to ../../build/drone_control/drone_control.egg-info/entry_points.txt\n'}
+[18.642518] (drone_control) StdoutLine: {'line': b'writing requirements to ../../build/drone_control/drone_control.egg-info/requires.txt\n'}
+[18.642593] (drone_control) StdoutLine: {'line': b'writing top-level names to ../../build/drone_control/drone_control.egg-info/top_level.txt\n'}
+[18.642915] (drone_control) StdoutLine: {'line': b"reading manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'\n"}
+[18.644023] (drone_control) StdoutLine: {'line': b"writing manifest file '../../build/drone_control/drone_control.egg-info/SOURCES.txt'\n"}
+[18.644228] (drone_control) StdoutLine: {'line': b'running build\n'}
+[18.644327] (drone_control) StdoutLine: {'line': b'running build_py\n'}
+[18.644753] (drone_control) StdoutLine: {'line': b'running install\n'}
+[18.645190] (drone_control) StdoutLine: {'line': b'running install_lib\n'}
+[18.649145] (drone_control) StdoutLine: {'line': b'running install_data\n'}
+[18.649336] (drone_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.650830] (drone_control) StdoutLine: {'line': b"removing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages/drone_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[18.651203] (drone_control) StdoutLine: {'line': b'Copying ../../build/drone_control/drone_control.egg-info to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/python3.10/site-packages/drone_control-0.0.0-py3.10.egg-info\n'}
+[18.652170] (drone_control) StdoutLine: {'line': b'running install_scripts\n'}
+[18.662115] (-) TimerEvent: {}
+[18.678421] (drone_control) StdoutLine: {'line': b'Installing drone_controller_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/drone_control\n'}
+[18.678740] (drone_control) StdoutLine: {'line': b'Installing geotag_manager_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/drone_control\n'}
+[18.679133] (drone_control) StdoutLine: {'line': b'Installing offboard_controller_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/drone_control/lib/drone_control\n'}
+[18.679321] (drone_control) StdoutLine: {'line': b"writing list of installed files to '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/drone_control/install.log'\n"}
+[18.725307] (drone_control) CommandEnded: {'returncode': 0}
+[18.732193] (drone_control) JobEnded: {'identifier': 'drone_control', 'rc': 0}
+[18.762234] (-) TimerEvent: {}
+[18.840736] (cv_bridge) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libcv_bridge.so\x1b[0m\n'}
+[18.863140] (-) TimerEvent: {}
+[18.963528] (-) TimerEvent: {}
+[19.063869] (-) TimerEvent: {}
+[19.096653] (cv_bridge) StdoutLine: {'line': b'[ 44%] Built target cv_bridge\n'}
+[19.120042] (cv_bridge) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o\x1b[0m\n'}
+[19.120282] (cv_bridge) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o\x1b[0m\n'}
+[19.163968] (-) TimerEvent: {}
+[19.264370] (-) TimerEvent: {}
+[19.365198] (-) TimerEvent: {}
+[19.465562] (-) TimerEvent: {}
+[19.566226] (-) TimerEvent: {}
+[19.668281] (-) TimerEvent: {}
+[19.768700] (-) TimerEvent: {}
+[19.869117] (-) TimerEvent: {}
+[19.969534] (-) TimerEvent: {}
+[20.069923] (-) TimerEvent: {}
+[20.170336] (-) TimerEvent: {}
+[20.271797] (-) TimerEvent: {}
+[20.372114] (-) TimerEvent: {}
+[20.472527] (-) TimerEvent: {}
+[20.572912] (-) TimerEvent: {}
+[20.674593] (-) TimerEvent: {}
+[20.774999] (-) TimerEvent: {}
+[20.875407] (-) TimerEvent: {}
+[20.975822] (-) TimerEvent: {}
+[21.077321] (-) TimerEvent: {}
+[21.112167] (cv_bridge) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o\x1b[0m\n'}
+[21.177424] (-) TimerEvent: {}
+[21.277817] (-) TimerEvent: {}
+[21.378220] (-) TimerEvent: {}
+[21.480120] (-) TimerEvent: {}
+[21.581079] (-) TimerEvent: {}
+[21.681449] (-) TimerEvent: {}
+[21.781838] (-) TimerEvent: {}
+[21.882232] (-) TimerEvent: {}
+[21.984216] (-) TimerEvent: {}
+[22.084593] (-) TimerEvent: {}
+[22.185004] (-) TimerEvent: {}
+[22.285433] (-) TimerEvent: {}
+[22.385810] (-) TimerEvent: {}
+[22.486245] (-) TimerEvent: {}
+[22.591251] (-) TimerEvent: {}
+[22.691673] (-) TimerEvent: {}
+[22.792119] (-) TimerEvent: {}
+[22.892539] (-) TimerEvent: {}
+[22.992965] (-) TimerEvent: {}
+[23.093281] (-) TimerEvent: {}
+[23.111872] (cv_bridge) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o\x1b[0m\n'}
+[23.193391] (-) TimerEvent: {}
+[23.295297] (-) TimerEvent: {}
+[23.395686] (-) TimerEvent: {}
+[23.435359] (cv_bridge) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv4.cpp.o\x1b[0m\n'}
+[23.495789] (-) TimerEvent: {}
+[23.596117] (-) TimerEvent: {}
+[23.696409] (-) TimerEvent: {}
+[23.797211] (-) TimerEvent: {}
+[23.897580] (-) TimerEvent: {}
+[23.998299] (-) TimerEvent: {}
+[24.099305] (-) TimerEvent: {}
+[24.199627] (-) TimerEvent: {}
+[24.300214] (-) TimerEvent: {}
+[24.401976] (-) TimerEvent: {}
+[24.502407] (-) TimerEvent: {}
+[24.602710] (-) TimerEvent: {}
+[24.703120] (-) TimerEvent: {}
+[24.803434] (-) TimerEvent: {}
+[24.904910] (-) TimerEvent: {}
+[25.005284] (-) TimerEvent: {}
+[25.105680] (-) TimerEvent: {}
+[25.206032] (-) TimerEvent: {}
+[25.254623] (cv_bridge) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o\x1b[0m\n'}
+[25.306111] (-) TimerEvent: {}
+[25.406530] (-) TimerEvent: {}
+[25.507257] (-) TimerEvent: {}
+[25.609118] (-) TimerEvent: {}
+[25.709525] (-) TimerEvent: {}
+[25.809956] (-) TimerEvent: {}
+[25.910384] (-) TimerEvent: {}
+[26.010804] (-) TimerEvent: {}
+[26.112260] (-) TimerEvent: {}
+[26.212647] (-) TimerEvent: {}
+[26.313079] (-) TimerEvent: {}
+[26.413528] (-) TimerEvent: {}
+[26.514275] (-) TimerEvent: {}
+[26.616411] (-) TimerEvent: {}
+[26.716748] (-) TimerEvent: {}
+[26.817183] (-) TimerEvent: {}
+[26.917625] (-) TimerEvent: {}
+[27.018050] (-) TimerEvent: {}
+[27.118945] (-) TimerEvent: {}
+[27.220273] (-) TimerEvent: {}
+[27.320628] (-) TimerEvent: {}
+[27.407166] (cv_bridge) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared module boost/cv_bridge_boost.so\x1b[0m\n'}
+[27.417106] (cv_bridge) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o\x1b[0m\n'}
+[27.422139] (-) TimerEvent: {}
+[27.522549] (-) TimerEvent: {}
+[27.622950] (-) TimerEvent: {}
+[27.628567] (cv_bridge) StdoutLine: {'line': b'[ 88%] Built target cv_bridge_boost\n'}
+[27.640118] (cv_bridge) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_dynamic_scaling.cpp.o\x1b[0m\n'}
+[27.723063] (-) TimerEvent: {}
+[27.823375] (-) TimerEvent: {}
+[27.923689] (-) TimerEvent: {}
+[28.023984] (-) TimerEvent: {}
+[28.125118] (-) TimerEvent: {}
+[28.225407] (-) TimerEvent: {}
+[28.325730] (-) TimerEvent: {}
+[28.428115] (-) TimerEvent: {}
+[28.528409] (-) TimerEvent: {}
+[28.628733] (-) TimerEvent: {}
+[28.729033] (-) TimerEvent: {}
+[28.829336] (-) TimerEvent: {}
+[28.930377] (-) TimerEvent: {}
+[29.030680] (-) TimerEvent: {}
+[29.130990] (-) TimerEvent: {}
+[29.231290] (-) TimerEvent: {}
+[29.332114] (-) TimerEvent: {}
+[29.432410] (-) TimerEvent: {}
+[29.533587] (-) TimerEvent: {}
+[29.633884] (-) TimerEvent: {}
+[29.734391] (-) TimerEvent: {}
+[29.834712] (-) TimerEvent: {}
+[29.935030] (-) TimerEvent: {}
+[30.035362] (-) TimerEvent: {}
+[30.135805] (-) TimerEvent: {}
+[30.194932] (cv_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cv_bridge-utest\x1b[0m\n'}
+[30.235912] (-) TimerEvent: {}
+[30.337462] (-) TimerEvent: {}
+[30.437800] (-) TimerEvent: {}
+[30.538121] (-) TimerEvent: {}
+[30.638451] (-) TimerEvent: {}
+[30.733485] (cv_bridge) StdoutLine: {'line': b'[100%] Built target cv_bridge-utest\n'}
+[30.738555] (-) TimerEvent: {}
+[30.745918] (cv_bridge) CommandEnded: {'returncode': 0}
+[30.746726] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'install'}
+[30.747090] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/cv_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[30.756200] (cv_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.756486] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh\n'}
+[30.756661] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv\n'}
+[30.756808] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info\n'}
+[30.756926] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/top_level.txt\n'}
+[30.757064] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[30.757201] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/PKG-INFO\n'}
+[30.757363] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[30.757474] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge\n'}
+[30.757570] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py\n'}
+[30.757670] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py\n'}
+[30.799138] (cv_bridge) StdoutLine: {'line': b"Listing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...\n"}
+[30.799365] (cv_bridge) StdoutLine: {'line': b"Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...\n"}
+[30.799479] (cv_bridge) StdoutLine: {'line': b"Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...\n"}
+[30.805730] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib/libcv_bridge.so\n'}
+[30.807384] (cv_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib/libcv_bridge.so" to ""\n'}
+[30.807595] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h\n'}
+[30.807736] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so\n'}
+[30.808436] (cv_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" to ""\n'}
+[30.808715] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge\n'}
+[30.808831] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge\n'}
+[30.808911] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_mat_sensor_msgs_image_type_adapter.hpp\n'}
+[30.809014] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.hpp\n'}
+[30.809119] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.hpp\n'}
+[30.809258] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/include/cv_bridge/cv_bridge/visibility_control.h\n'}
+[30.809434] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib/libcv_bridge.so\n'}
+[30.809717] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge\n'}
+[30.809916] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge\n'}
+[30.810107] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh\n'}
+[30.810351] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv\n'}
+[30.810543] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/path.sh\n'}
+[30.810722] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/environment/path.dsv\n'}
+[30.810921] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.bash\n'}
+[30.811114] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.sh\n'}
+[30.811322] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.zsh\n'}
+[30.811506] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/local_setup.dsv\n'}
+[30.811728] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/package.dsv\n'}
+[30.811867] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge\n'}
+[30.812040] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake\n'}
+[30.812185] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake\n'}
+[30.812326] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake\n'}
+[30.812465] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.812603] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.812735] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake\n'}
+[30.812836] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake\n'}
+[30.812960] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/share/cv_bridge/package.xml\n'}
+[30.815125] (cv_bridge) CommandEnded: {'returncode': 0}
+[30.832866] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 0}
+[30.833612] (aruco_tracker) JobStarted: {'identifier': 'aruco_tracker'}
+[30.838108] (opencv_tests) JobStarted: {'identifier': 'opencv_tests'}
+[30.838641] (-) TimerEvent: {}
+[30.846248] (aruco_tracker) JobProgress: {'identifier': 'aruco_tracker', 'progress': 'cmake'}
+[30.847260] (aruco_tracker) JobProgress: {'identifier': 'aruco_tracker', 'progress': 'build'}
+[30.847615] (aruco_tracker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker', '--', '-j2', '-l2'], 'cwd': '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'chakrapani'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/lib:/home/chakrapani/px4_ros_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chakrapani'), ('OLDPWD', '/home/chakrapani/drone_files/drone_precise_delivery'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40866'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chakrapani/px4_ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chakrapani'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chakrapani'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/chakrapani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chakrapani:@/tmp/.ICE-unix/1019,unix/chakrapani:/tmp/.ICE-unix/1019'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1607bb9_15de_4205_83a5_69426a5b20c7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8GYG82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.219'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge:/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/aruco_tracker'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/chakrapani/px4_ros_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/cv_bridge:/home/chakrapani/px4_ros_ws/install/px4_msgs:/opt/ros/humble')]), 'shell': False}
+[30.910655] (aruco_tracker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/aruco_tracker.dir/ArucoTracker.cpp.o\x1b[0m\n'}
+[30.938742] (-) TimerEvent: {}
+[31.039075] (-) TimerEvent: {}
+[31.139470] (-) TimerEvent: {}
+[31.201765] (aruco_tracker) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/aruco_tracker/ArucoTracker.cpp:1\x1b[m\x1b[K:\n'}
+[31.201943] (aruco_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/aruco_tracker/ArucoTracker.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcv_bridge/cv_bridge.hpp: No such file or directory\n'}
+[31.202043] (aruco_tracker) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K<cv_bridge/cv_bridge.hpp>\x1b[m\x1b[K\n'}
+[31.203218] (aruco_tracker) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.203315] (aruco_tracker) StderrLine: {'line': b'compilation terminated.\n'}
+[31.205339] (aruco_tracker) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/aruco_tracker.dir/build.make:76: CMakeFiles/aruco_tracker.dir/ArucoTracker.cpp.o] Error 1\n'}
+[31.205572] (aruco_tracker) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/aruco_tracker.dir/all] Error 2\n'}
+[31.205728] (aruco_tracker) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[31.209389] (aruco_tracker) CommandEnded: {'returncode': 2}
+[31.215992] (aruco_tracker) JobEnded: {'identifier': 'aruco_tracker', 'rc': 2}
+[31.239585] (-) TimerEvent: {}
+[31.339928] (-) TimerEvent: {}
+[31.440222] (-) TimerEvent: {}
+[31.540507] (-) TimerEvent: {}
+[31.631035] (opencv_tests) JobEnded: {'identifier': 'opencv_tests', 'rc': 'SIGINT'}
+[31.640601] (-) TimerEvent: {}
+[31.641486] (vision_opencv) JobSkipped: {'identifier': 'vision_opencv'}
+[31.641523] (-) EventReactorShutdown: {}

@@ -1,0 +1,5 @@
+source;share/aruco_tracker/local_setup.bash
+source;share/aruco_tracker/local_setup.dsv
+source;share/aruco_tracker/local_setup.ps1
+source;share/aruco_tracker/local_setup.sh
+source;share/aruco_tracker/local_setup.zsh

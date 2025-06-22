@@ -1,0 +1,103 @@
+[0.014s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/vision_opencv/image_geometry -DCMAKE_INSTALL_PREFIX=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.147s] -- The CXX compiler identification is GNU 11.4.0
+[0.158s] -- Detecting C compiler ABI info
+[0.237s] -- Detecting C compiler ABI info - done
+[0.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.246s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.345s] -- Detecting CXX compiler ABI info - done
+[0.355s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.355s] -- Detecting CXX compile features
+[0.356s] -- Detecting CXX compile features - done
+[0.357s] -- Found ament_cmake_python: 1.3.11 (/opt/ros/humble/share/ament_cmake_python/cmake)
+[0.359s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.549s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.770s] -- Found OpenCV: /usr (found version "4.5.4") found components: calib3d core highgui imgproc 
+[0.771s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.809s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.816s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.827s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.842s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.861s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.399s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.401s] -- Looking for pthread.h
+[1.501s] -- Looking for pthread.h - found
+[1.501s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.589s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.591s] -- Found Threads: TRUE  
+[1.677s] -- Configuring done
+[1.699s] -- Generating done
+[1.708s] -- Build files have been written to: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry
+[1.721s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/vision_opencv/image_geometry -DCMAKE_INSTALL_PREFIX=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry
+[1.726s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry -- -j2 -l2
+[1.793s] [  0%] Built target ament_cmake_python_copy_image_geometry
+[1.803s] [  9%] [32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o[0m
+[1.840s] [ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[3.684s] [ 27%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.762s] [ 27%] Built target gtest_main
+[3.812s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[4.464s] [ 45%] [32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o[0m
+[7.510s] [ 54%] [32m[1mLinking CXX shared library libimage_geometry.so[0m
+[7.791s] [ 54%] Built target image_geometry
+[8.311s] running egg_info
+[8.313s] creating image_geometry.egg-info
+[8.314s] writing image_geometry.egg-info/PKG-INFO
+[8.314s] writing dependency_links to image_geometry.egg-info/dependency_links.txt
+[8.317s] writing top-level names to image_geometry.egg-info/top_level.txt
+[8.317s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[8.322s] reading manifest file 'image_geometry.egg-info/SOURCES.txt'
+[8.324s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[8.408s] [ 54%] Built target ament_cmake_python_build_image_geometry_egg
+[11.159s] [ 63%] [32m[1mLinking CXX static library libgtest.a[0m
+[11.289s] [ 63%] Built target gtest
+[11.342s] [ 72%] [32mBuilding CXX object test/CMakeFiles/image_geometry-utest.dir/utest.cpp.o[0m
+[11.342s] [ 81%] [32mBuilding CXX object test/CMakeFiles/image_geometry-utest-equi.dir/utest_equi.cpp.o[0m
+[15.664s] [ 90%] [32m[1mLinking CXX executable image_geometry-utest-equi[0m
+[16.252s] [ 90%] Built target image_geometry-utest-equi
+[16.633s] [100%] [32m[1mLinking CXX executable image_geometry-utest[0m
+[17.128s] [100%] Built target image_geometry-utest
+[17.142s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry -- -j2 -l2
+[17.153s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry
+[17.163s] -- Install configuration: ""
+[17.164s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/pythonpath.sh
+[17.164s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/pythonpath.dsv
+[17.164s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info
+[17.164s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/top_level.txt
+[17.165s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/dependency_links.txt
+[17.166s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/PKG-INFO
+[17.167s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/SOURCES.txt
+[17.167s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry
+[17.167s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py
+[17.167s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py
+[17.240s] Listing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...
+[17.240s] Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py'...
+[17.240s] Compiling '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py'...
+[17.251s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry
+[17.251s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry
+[17.251s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp
+[17.251s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.hpp
+[17.252s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.hpp
+[17.252s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/lib/libimage_geometry.so
+[17.253s] -- Set runtime path of "/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/lib/libimage_geometry.so" to ""
+[17.254s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry
+[17.255s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry
+[17.255s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh
+[17.255s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv
+[17.256s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/path.sh
+[17.256s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/environment/path.dsv
+[17.257s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.bash
+[17.257s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.sh
+[17.257s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.zsh
+[17.257s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/local_setup.dsv
+[17.258s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/package.dsv
+[17.258s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/ament_index/resource_index/packages/image_geometry
+[17.259s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake
+[17.259s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake
+[17.259s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake
+[17.260s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.260s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake
+[17.261s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake
+[17.261s] -- Installing: /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/image_geometry/share/image_geometry/package.xml
+[17.264s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/image_geometry

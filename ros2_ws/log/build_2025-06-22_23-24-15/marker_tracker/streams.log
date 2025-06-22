@@ -1,0 +1,21 @@
+[1.155s] Invoking command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/marker_tracker': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/marker_tracker build --build-base /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/build install --record /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/install.log --single-version-externally-managed install_data
+[1.481s] running egg_info
+[1.482s] writing ../../build/marker_tracker/marker_tracker.egg-info/PKG-INFO
+[1.482s] writing dependency_links to ../../build/marker_tracker/marker_tracker.egg-info/dependency_links.txt
+[1.482s] writing entry points to ../../build/marker_tracker/marker_tracker.egg-info/entry_points.txt
+[1.482s] writing requirements to ../../build/marker_tracker/marker_tracker.egg-info/requires.txt
+[1.482s] writing top-level names to ../../build/marker_tracker/marker_tracker.egg-info/top_level.txt
+[1.485s] reading manifest file '../../build/marker_tracker/marker_tracker.egg-info/SOURCES.txt'
+[1.485s] writing manifest file '../../build/marker_tracker/marker_tracker.egg-info/SOURCES.txt'
+[1.486s] running build
+[1.486s] running build_py
+[1.487s] running install
+[1.487s] running install_lib
+[1.489s] running install_data
+[1.489s] running install_egg_info
+[1.491s] removing '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages/marker_tracker-0.0.0-py3.10.egg-info' (and everything under it)
+[1.491s] Copying ../../build/marker_tracker/marker_tracker.egg-info to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages/marker_tracker-0.0.0-py3.10.egg-info
+[1.492s] running install_scripts
+[1.520s] Installing marker_tracker_node script to /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/marker_tracker
+[1.520s] writing list of installed files to '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/install.log'
+[1.571s] Invoked command in '/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/src/marker_tracker' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/install/marker_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/marker_tracker build --build-base /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/build install --record /home/chakrapani/drone_files/drone_precise_delivery/ros2_ws/build/marker_tracker/install.log --single-version-externally-managed install_data

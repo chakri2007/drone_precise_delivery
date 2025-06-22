@@ -1,0 +1,5 @@
+[console_scripts]
+drone_controller_node = drone_control.drone_controller_node:main
+geotag_manager_node = drone_control.geotag_manager_node:main
+offboard_controller_node = drone_control.offboard_controller_node:main
+

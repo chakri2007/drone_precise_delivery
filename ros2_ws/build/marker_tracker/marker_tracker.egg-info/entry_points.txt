@@ -1,0 +1,3 @@
+[console_scripts]
+marker_tracker_node = marker_tracker.marker_tracker_node:main
+
