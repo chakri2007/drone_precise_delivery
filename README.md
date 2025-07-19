@@ -1,7 +1,7 @@
 ## Usage
 
 ### Setup the Workspace
-
+```
 ./install_opencv.sh 
 ```
 Install the submoduls
